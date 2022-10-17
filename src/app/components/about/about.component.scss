@@ -1,15 +1,23 @@
+
 @import '../../../assets/styles/vars.scss';
 
 .row {
 	display: flex;
 }
-
+.container{
+	width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
 .about{
 	display: block;
 
 	.skills{
-		padding: 100px 0;
+		padding: 100px 20px 100px 100px;
 		flex: 0 0 33%;
+		
 
 		
 
@@ -72,7 +80,7 @@
 			margin-bottom: 10px;
 		}
 
-		h5{
+		h4{
 			display: inline-block;
 			font-size: 30px;
 			font-weight: 600;
@@ -101,6 +109,11 @@
 				padding-right: 50px;
 				color: $main-color;
 				font-size: 12px;
+
+				&:hover{
+					display: inline-block;
+    				text-decoration: none;
+				}
 
 				&:after{
 					content: '';
@@ -134,7 +147,7 @@
 	position: relative;
 	text-align: center;
 
-	h4{
+	h5{
 		font-size: 70px;
 		font-weight: 800;
 		font-family: inherit;
@@ -145,6 +158,8 @@
 }
 }
 
-.col-lg-4{
+.col-lg-5{
 	flex: 0 0 33%;
+	padding: 100px 100px 100px 20px;
+	height: 100%;
 }
